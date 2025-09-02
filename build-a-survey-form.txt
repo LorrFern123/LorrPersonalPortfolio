@@ -1,0 +1,137 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylessheet" href="styles.css">
+    <meta charset="utf-8">
+    <title>SurveyForm</title>
+  </head>
+  <body>
+    <main>
+    <h1 id="title">FreeCodeCamp Experience Survey</h1>
+    <p id="description"> This form will help us improve your experience with the freeCodeCamp website.</p>
+
+    <hr>
+
+    <form id="survey-form" action="url(https://www.freecodecamp.org/)" target="_blank" method="post">
+      <div>
+      <fieldset>
+        <label for="name" id="name-label">Enter your name: <input id="name" type="text" placeholder="name" required></label>
+        <label for="email" id="email-label">Enter your email: <input id="email" type="email" placeholder="email address" required></label>
+        <label for="number" id="number-label">Enter your number: <input id="number" type="number" placeholder="phone number" min="8" max="1000000000000"></label>
+      </fieldset>
+
+      <fieldset>
+      <label for="dropdown"> Which option best describes your learning interests?
+        <select id="dropdown">
+          <option id="data" value="data">Data Analysis and AI</option>
+          <option id="development" value="development">Front and Back End Development</option>
+          <option id="webDesign" value="webDesign">Web Design</option>
+        </select>
+      </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Why are you using freeCodeCamp?</legend>
+          <label class="label" for="student"><input class="input" id="student" type="radio" name="purpose" value="student">School</label>
+          <label class="label" for="job experience"><input class="input" id="job experience" type="radio" name="purpose" value="job experience">Job Experience</label>
+          <label class="label" for="hobby"><input class="input" id="hobby" name="purpose" type="radio" value="hobby">Hobby</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Which of the following do you find satisfactory?</legend>
+        <label class="label" for="challenges"><input class="input" type="checkbox" id="challenges" value="challenges" checked>Challenges</label>
+        <label class="label" for="projects"><input class="input" type="checkbox" id="projects" value="projects">Projects</label>
+        <label class="label" for="community"><input class="input" type="checkbox" id="community" value="community">Community</label>
+        <label class="label" for="openSource"><input class="input" type="checkbox" id="openSource" value="openSource">Open Source</label>
+      </fieldset>
+
+      <fieldset>
+        <label>Comments or suggestions for improvement?
+          <textarea rows="4" cols="36"></textarea>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <input type="submit" id='submit'>
+      </fieldset>
+      <div>
+    </form>
+
+    <hr>
+
+    </main>
+    <footer>
+      <p>Thank you for your time.</p>
+    </footer>
+  </body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  font-style: italic;
+}
+
+hr {
+  height: 2px;
+  background-color: hsl(250, 100%, 70%);
+  border-color: hsl(250, 100%, 70%);
+  margin-bottom: 10px
+}
+
+hr:last-of-type {
+  margin:0;
+}
+
+body {
+  background: url(https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTA4L2Rlc2lnbndpdGhtZTA5X2JhYnlfcGlua19hZXN0aGV0aWNfd2FsbHBhcGVyX29mX2Nsb3NlX3VwX3NhbmR5X18xMmRiMTgwOS02YTIyLTRlNjEtYjFkNy0xZThiNDA0NDBkZDJfMS5qcGc.jpg)
+}
+
+div {
+  background-color: beige;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+fieldset {
+  margin: 10px 0;
+  border-color: pink
+}
+
+fieldset:last-of-type {
+  border-width: 0
+}
+
+label, legend {
+  font-size: 16px;
+  font-family: tahoma;
+}
+
+input {
+   width: 100%;
+}
+
+.input {
+  margin:0;
+  width: 15%
+}
+
+.label {
+  width: 75%;
+  margin-right: 0;
+  display: block;
+  margin-left: 0
+}
+
+** end of styles.css **
+

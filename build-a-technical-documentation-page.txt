@@ -1,0 +1,215 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>JavaScript Documentation Page</title>
+  </head>
+  <body>
+    <main id="main-doc">
+      <div class="navbar">
+        <nav id="navbar">
+          <header class="smaller-font">JS Documentation</header>
+          <a class="nav-link" href="#JavaScript_And_Java" >JavaScript And Java</a>
+          <a class="nav-link" href="#Declaring_Variables">Declaring Variables</a>
+          <a class="nav-link" href="#Variable_Scope">Variable Scope</a>
+          <a class="nav-link" href="#Constants">Constants</a>
+          <a class="nav-link" href="#Data_Types">Data Types</a>
+          <a class="nav-link" href="#If_Else_Statements">If Else Statements</a>
+          <a class="nav-link" href="#While_Statements">While Statements</a>
+          <a class="nav-link" href="#Declaring_Functions">Declaring Functions</a>
+        </nav>
+      </div>
+      <div class="main-content">
+        <section id="JavaScript_And_Java" class="main-section">
+          <header>JavaScript And Java</header>
+          <p class="bold">Here's how Java and JavaScript differ: </p>
+          <p>In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a runtime system based on a small number of data types representing numeric, Boolean, and string values. JavaScript has a prototype-based object model instead of the more common class-based object model. The prototype-based model provides dynamic inheritance; that is, what is inherited can vary for individual objects. JavaScript also supports functions without any special declarative requirements. Functions can be properties of objects, executing as loosely typed methods.
+
+  </p>
+          <p>JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes, and methods. You do not have to be concerned with whether methods are public, private, or protected, and you do not have to implement interfaces. Variables, parameters, and function return types are not explicitly typed.</p>
+        </section>
+
+        <section id="Declaring_Variables" class="main-section">
+          <header>Declaring Variables</header>
+          <p>A JavaScript variable must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase). Ex: Number_hits, temp99, _name.</p>
+          <p class="bold">3 ways to declare variables are:</p>
+          <p>Using the keyword var. This can create both global and local variables. Ex:</p>
+          <code>var x = 42.</code>
+          <p>Simply assigning it a value. This only declares global variables and is not recommended. Ex:</p>
+          <code>x = 42</code>
+          <p>With the keyword let. This declares a block scope local variable. Ex </p>
+          <code class="before-header">let y = 13</code>
+        </section>
+
+        <section id="Variable_Scope" class="main-section">
+          <header>Variable Scope</header>
+          <p>Variable scopes can be global (declared outside of a function and usuable anywhere) or local (declared inside a function and only usuable in the function).</p>
+          <p>It is best not to rely too much on global variables since they can cause accidental changes and mistakes and make troubleshooting difficult.</p>
+        </section>
+
+        <section id="Constants" class="main-section">
+          <header>Constants</header>
+          <p>Constants are identifiers whose values cannot change throughout the program. You use the const keyword, and the name cannot be the same as any local variable or function. Ex:</p>
+          <code class="before-header">const PI = 3.14;</code>
+        </section>
+
+        <section id="Data_Types" class="main-section">
+          <header>Data Types</header>
+          <p class="bold">6 primitive data types are:</p>
+          <ul>
+            <li>Boolean (true or false)</li>
+            <li>null (no value)</li>
+            <li>undefined (from math)</li>
+            <li>Number (42 or 3.14159)</li>
+            <li>String ("Hello World!")</li>
+            <li>Symbol (unique and immutable)</li>
+          </ul>
+          <p class="bold">A non-primitive data type is:</p>
+          <ul class="before-header">
+            <li>Objects (named containers for values)</li>
+          </ul>
+        </section>
+
+        <section id="If_Else_Statements" class="main-section">
+          <header>If Else Statements</header>
+          <p>These statements execute if a logical condition or boolean expression is true. It follows the format of if, else if, and an optional else as shown below:</p>
+          <code>if (condition) { statement_1; } else { statement_2; }</code>
+          <p>Multiple clauses can also be stacked as blocks:</p>
+          <code>if (condition) { statement_1_runs_if_condition_is_true;
+  statement_2_runs_if_condition_is_true; } else {
+  statement_3_runs_if_condition_is_false;
+  statement_4_runs_if_condition_is_false; }</code>
+          <p>If you need to use an assignment in a conditional expression, a common practice is to put additional parentheses around the assignment. Ex:
+  </p>
+          <code class="before-header">if ((x = y)) { /* statements here */ }</code>
+        </section>
+
+        <section id="While_Statements" class="main-section">
+          <header>While Statements</header>
+          <p>A while statement executes its statements as long as a specified condition evaluates to true. The format is:
+  </p>
+        <code>while (condition) statement</code>
+        <p>To execute multiple statements, use a block statement ({ ... }) to group those statements. The following while loop iterates as long as n is less than three:</p>
+        <code class="before-header">var n = 0; var x = 0; while (n < 3) { n++; x += n; }
+  </code>
+        </section>
+
+        <section id="Declaring_Functions" class="main-section">
+          <header>Declaring Functions</header>
+          <p>Functions perform simple tasks. They consist of: </p>
+          <ul>
+            <li>The function keyword.</li>
+            <li>The name of the function.
+  </li>
+            <li>A list of arguments to the function, enclosed in parentheses and separated by commas.
+  </li>
+            <li>The JavaScript statements that define the function, enclosed in curly brackets, { }.
+  </li>
+          </ul>
+          <p>For example, the following code defines a simple function named square:</p>
+          <code>function square(number) { return number * number; }</code>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+html {
+  box-sizing: border-box
+}
+
+header {
+  font-size: 2rem;
+  font-family: Arial;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+p {
+  font-family: Arial;
+  color: #555;
+  padding: 2px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+code {
+  padding: 15px;
+  background-color: #f0f0f0;
+  width: 100%;
+  display: block;
+  border-radius: 3px;
+  margin: auto;
+}
+
+.before-header {
+  margin-bottom: 40px;
+}
+
+ul {
+  font-family: Arial;
+  color: #555
+}
+
+#navbar {
+  width: 250px;
+  background-color: #f0f0f0;
+  padding: 1em;
+  
+}
+
+@media (min-width: 768px) {
+  #navbar {
+    position: fixed;
+    top: 0;
+    left:0;
+    height: 100vh;
+    overflow-y: auto;
+    width: 250px;
+  }
+}
+
+.main-content {
+  margin-left: 250px;
+  padding: 2em;
+}
+
+@media (max-width: 767px) {
+  #navbar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-height: 280px;
+    overflow-x: auto
+  }
+  .main-content {
+    margin-left: 0;
+  }
+}
+
+#navbar a {
+  display: block;
+  margin-bottom: 0.5em;
+  text-decoration: none;
+  color: hsl(220,70%,40%);
+  border-top: 1px solid black;
+  padding: 1em;
+  font-family: arial
+}
+
+.smaller-font {
+  font-size: 1.5rem
+}
+
+** end of styles.css **
+

@@ -1,0 +1,348 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cake Product Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header id="header">
+      <img id="header-img" src="https://static.thenounproject.com/png/262639-200.png" alt="a slice of cake">
+      <p class="web-title">Velveteen Cakes</p>
+      <nav id="nav-bar">
+        <a class="nav-link" href="#Ingredients"><p>Ingredient Information</p></a>
+        <a class="nav-link" href="#Video"><p>How To Bake</p></a>
+        <a class="nav-link" href="#Flavors"><p>Flavors & Pricing</p></a>
+      </nav>
+    </header>
+    <main>
+      <!--The top part -->
+      <section>
+        <h1>Delicious, Quality Cake Mixes</h1>
+        <form id="form" action="https://www.freecodecamp.com/email-submit" method='POST'>
+          <input name="email" id="email" placeholder="Enter your email address" type="email">
+          <input id="submit" type="submit">
+        </form>
+      </section>
+
+      <!--Ingredients -->
+      <section id="Ingredients">
+        <article>
+          <img src="https://cdn-icons-png.flaticon.com/512/2553/2553587.png" alt="chocolate bar">
+          <h2>Premium Ingredients</h2>
+          <p>We use couverture chocolate, pure cocoa powder, natural vanilla extract, real powder butter, and organic cane sugar for the highest quality ingredients.</p>
+        </article>
+        <article>
+          <img src="https://img.freepik.com/premium-vector/design-brown-delivery-truck-icon-suitable-logistics-shipping-concepts-icon_1076610-17883.jpg" alt="delivery truck">
+          <h2>Fast Shipping</h2>
+          <p>Your product will be delivered within 1 day of order. Full refunds for first time buyers if not satisfied.</p>
+        </article>
+        <article>
+          <img src="https://cdn-icons-png.flaticon.com/512/310/310831.png" alt="high quality icon">
+          <h2>High Quality Cakes</h2>
+          <p>Our products have been used by many famous bakers and cake decorators for fast and easy cakes. They are test and approved.</p>
+        </article>
+      </section>
+      
+      <!-- Video -->
+      <section id="Video">
+        <iframe id='video'
+          width="300"
+          height="180"
+          title="How To Use Cake Mix"
+          src="https://www.youtube.com/embed/ldJKXtbCNXI"
+          allow="accelerometer; encrypted-media; picture-in-picture; gyroscope; autoscope; clipboard-write"
+          allowfullscreen
+        >
+        </iframe>
+      </section>
+
+      <!--Flavor Boxes -->
+      <section id="Flavors">
+        <div class="flavor">
+          <div class="highlight"><p>Chocolate</p></div>
+          <p class="price">$10</p>
+          <ul>
+            <li>makes an 8" cake</li>
+            <li>serves 12-16 people</li>
+            <li>includes chocolate buttercream frosting</li>
+          </ul>
+        </div>
+        <div class="flavor">
+          <div class="highlight"><p>Vanilla</p></div>
+          <p class="price">$10</p>
+          <ul>
+            <li>makes an 8" cake</li>
+            <li>serves 12-16 people</li>
+            <li>includes vanilla buttercream frosting</li>
+          </ul>
+        </div>
+        <div class="flavor">
+          <div class="highlight"><p>Red Velvet</p></div>
+          <p class="price">$15</p>
+          <ul>
+            <li>makes an 8" cake</li>
+            <li>serves 12-16 people</li>
+            <li>includes cream cheese frosting</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <nav></nav>
+      <p id="footer-p">Copyright 2025, Velveteen Cakes</p>
+    </footer>
+  </body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+* {box-sizing: border-box}
+
+body,h1,h2,p,ul {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica;
+}
+
+/* header and nav section */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #fff; 
+  border-bottom: 1px solid #ddd;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000
+}
+
+#header-img {
+  width: 40px;
+  height: 40px
+}
+
+.web-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 10px;
+  color: #333;
+  flex-grow: 1
+}
+
+nav {
+  display: flex;
+  gap: 20px
+}
+
+nav a {
+  text-decoration: none;
+  color:#555;
+  font-weight: 600;
+}
+
+/* form and title section */
+body {
+  padding-top: 105px;
+}
+
+main > section:first-of-type {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fafafa
+}
+
+main > section:first-of-type h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+form {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: content;
+  gap: 10px;
+}
+
+#email {
+  padding: 10px;
+  font-size: 1rem;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#submit, #form button {
+  background-color: #e67e22;
+  color: white;
+  border: none;
+  padding: 11px 20px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#submit:hover, #form:hover button {
+    background-color: #cf6c14;
+}
+
+/* Ingredient info section */
+#Ingredients {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 40px 20px;
+  background-color: #fff;
+  flex-wrap: wrap; /* wraps on smaller screens */
+}
+
+#Ingredients article {
+  flex: 1 1 250px; /* grow, shrink, basis */
+  max-width: 300px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  background-color: #f9f9f9;
+  transition: transform 0.3s ease;
+}
+
+#Ingredients article:hover {
+  transform: translateY(-5px);
+}
+
+#Ingredients article img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+}
+
+#Ingredients article h2 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  color: #333;
+  font-weight: 700;
+}
+
+#Ingredients article p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+/* stacks contents vertically on small screens */
+@media (max-width: 600px) {
+  #Ingredients {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #Ingredients article {
+    max-width: 90%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Video section */
+#Video {
+  padding: 40px 20px;
+  text-align: center
+}
+
+#video {
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);}
+
+/* Flavors section */
+#Flavors {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.flavor {
+  flex: 1 1 250px;
+  max-width: 300px;
+  background-color: #fdfdfd;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.flavor:hover {
+  transform: translateY(-5px);
+}
+
+.highlight p {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #e67e22;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.price {
+  font-size: 2rem;
+  color: #333;
+  margin: 15px 0;
+}
+
+.flavor ul {
+  list-style: none;
+  padding: 0;
+}
+
+.flavor li {
+  padding: 6px 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* stacks contents vertically on small screens */
+@media (max-width: 768px) {
+  #Flavors {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flavor {
+    max-width: 90%;
+  }
+}
+
+/* Footer */
+footer {
+  background-color: #f3f3f3;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
+}
+
+#footer-p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+** end of styles.css **
+
