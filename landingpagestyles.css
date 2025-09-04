@@ -1,0 +1,241 @@
+* {box-sizing: border-box}
+
+body,h1,h2,p,ul {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica;
+}
+
+/* header and nav section */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #fff; 
+  border-bottom: 1px solid #ddd;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000
+}
+
+#header-img {
+  width: 40px;
+  height: 40px
+}
+
+.web-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 10px;
+  color: #333;
+  flex-grow: 1
+}
+
+nav {
+  display: flex;
+  gap: 20px
+}
+
+nav a {
+  text-decoration: none;
+  color:#555;
+  font-weight: 600;
+}
+
+/* form and title section */
+body {
+  padding-top: 105px;
+}
+
+main > section:first-of-type {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fafafa
+}
+
+main > section:first-of-type h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+form {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: content;
+  gap: 10px;
+}
+
+#email {
+  padding: 10px;
+  font-size: 1rem;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#submit, #form button {
+  background-color: #e67e22;
+  color: white;
+  border: none;
+  padding: 11px 20px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#submit:hover, #form:hover button {
+    background-color: #cf6c14;
+}
+
+/* Ingredient info section */
+#Ingredients {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 40px 20px;
+  background-color: #fff;
+  flex-wrap: wrap; /* wraps on smaller screens */
+}
+
+#Ingredients article {
+  flex: 1 1 250px; /* grow, shrink, basis */
+  max-width: 300px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  background-color: #f9f9f9;
+  transition: transform 0.3s ease;
+}
+
+#Ingredients article:hover {
+  transform: translateY(-5px);
+}
+
+#Ingredients article img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+}
+
+#Ingredients article h2 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  color: #333;
+  font-weight: 700;
+}
+
+#Ingredients article p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+/* stacks contents vertically on small screens */
+@media (max-width: 600px) {
+  #Ingredients {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #Ingredients article {
+    max-width: 90%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Video section */
+#Video {
+  padding: 40px 20px;
+  text-align: center
+}
+
+#video {
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);}
+
+/* Flavors section */
+#Flavors {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.flavor {
+  flex: 1 1 250px;
+  max-width: 300px;
+  background-color: #fdfdfd;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.flavor:hover {
+  transform: translateY(-5px);
+}
+
+.highlight p {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #e67e22;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.price {
+  font-size: 2rem;
+  color: #333;
+  margin: 15px 0;
+}
+
+.flavor ul {
+  list-style: none;
+  padding: 0;
+}
+
+.flavor li {
+  padding: 6px 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* stacks contents vertically on small screens */
+@media (max-width: 768px) {
+  #Flavors {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flavor {
+    max-width: 90%;
+  }
+}
+
+/* Footer */
+footer {
+  background-color: #f3f3f3;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
+}
+
+#footer-p {
+  font-size: 0.9rem;
+  color: #666;
+}

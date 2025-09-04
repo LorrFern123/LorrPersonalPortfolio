@@ -1,0 +1,76 @@
+body {
+  text-align: center;
+  color: black;
+  background-color: hsl(220,100%,90%);
+  padding: auto;
+  margin: 20px;
+}
+
+header {
+
+  padding: 10px;
+  margin: auto;
+}
+
+footer {
+  background-color: white;
+  padding: 20px;
+}
+
+img {
+  margin: auto;
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+#img-div {
+  background-color: white;
+  margin: 20px 0;
+  padding: 20px
+}
+
+hr {
+  height: 5px;
+  margin-top: 0;
+  background-color: black;
+  border: black;
+}
+
+.bold {
+  font-size: 1.25em;
+  margin-bottom: 50px;
+}
+
+.big {
+  font-size: 1.2rem
+}
+
+h1, h2 {
+  font-family: Tahoma
+}
+
+h2 {
+  margin-top: 50px;
+}
+
+p, li {
+  font-family: Arial
+}
+
+.quote,.quoter {
+  font-style: italic;
+}
+
+.quoter {
+  margin-bottom: 60px;
+}
+
+.left {
+  text-align: left;
+  margin: 40px 0
+}
+
+li {
+  margin: 15px
+}

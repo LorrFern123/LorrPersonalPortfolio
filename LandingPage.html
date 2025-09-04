@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cake Product Page</title>
+    <link rel="stylesheet" href="landingpagestyles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header id="header">
+      <img id="header-img" src="https://static.thenounproject.com/png/262639-200.png" alt="a slice of cake">
+      <p class="web-title">Velveteen Cakes</p>
+      <nav id="nav-bar">
+        <a class="nav-link" href="#Ingredients"><p>Ingredient Information</p></a>
+        <a class="nav-link" href="#Video"><p>How To Bake</p></a>
+        <a class="nav-link" href="#Flavors"><p>Flavors & Pricing</p></a>
+      </nav>
+    </header>
+    <main>
+      <!--The top part -->
+      <section>
+        <h1>Delicious, Quality Cake Mixes</h1>
+        <form id="form" action="https://www.freecodecamp.com/email-submit" method='POST'>
+          <input name="email" id="email" placeholder="Enter your email address" type="email">
+          <input id="submit" type="submit">
+        </form>
+      </section>
+
+      <!--Ingredients -->
+      <section id="Ingredients">
+        <article>
+          <img src="https://cdn-icons-png.flaticon.com/512/2553/2553587.png" alt="chocolate bar">
+          <h2>Premium Ingredients</h2>
+          <p>We use couverture chocolate, pure cocoa powder, natural vanilla extract, real powder butter, and organic cane sugar for the highest quality ingredients.</p>
+        </article>
+        <article>
+          <img src="https://img.freepik.com/premium-vector/design-brown-delivery-truck-icon-suitable-logistics-shipping-concepts-icon_1076610-17883.jpg" alt="delivery truck">
+          <h2>Fast Shipping</h2>
+          <p>Your product will be delivered within 1 day of order. Full refunds for first time buyers if not satisfied.</p>
+        </article>
+        <article>
+          <img src="https://cdn-icons-png.flaticon.com/512/310/310831.png" alt="high quality icon">
+          <h2>High Quality Cakes</h2>
+          <p>Our products have been used by many famous bakers and cake decorators for fast and easy cakes. They are test and approved.</p>
+        </article>
+      </section>
+      
+      <!-- Video -->
+      <section id="Video">
+        <iframe id='video'
+          width="300"
+          height="180"
+          title="How To Use Cake Mix"
+          src="https://www.youtube.com/embed/ldJKXtbCNXI"
+          allow="accelerometer; encrypted-media; picture-in-picture; gyroscope; autoscope; clipboard-write"
+          allowfullscreen
+        >
+        </iframe>
+      </section>
+
+      <!--Flavor Boxes -->
+      <section id="Flavors">
+        <div class="flavor">
+          <div class="highlight"><p>Chocolate</p></div>
+          <p class="price">$10</p>
+          <ul>
+            <li>Makes an 8" cake</li>
+            <li>Serves 12-16 people</li>
+            <li>Includes chocolate buttercream frosting</li>
+          </ul>
+        </div>
+        <div class="flavor">
+          <div class="highlight"><p>Vanilla</p></div>
+          <p class="price">$10</p>
+          <ul>
+            <li>Makes an 8" cake</li>
+            <li>Serves 12-16 people</li>
+            <li>Includes vanilla buttercream frosting</li>
+          </ul>
+        </div>
+        <div class="flavor">
+          <div class="highlight"><p>Red Velvet</p></div>
+          <p class="price">$15</p>
+          <ul>
+            <li>Makes an 8" cake</li>
+            <li>Serves 12-16 people</li>
+            <li>Includes cream cheese frosting</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <nav></nav>
+      <p id="footer-p">Copyright 2025, Velveteen Cakes</p>
+    </footer>
+  </body>
+</html>
