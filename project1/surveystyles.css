@@ -1,0 +1,60 @@
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  font-style: italic;
+}
+
+hr {
+  height: 2px;
+  background-color: hsl(250, 100%, 70%);
+  border-color: hsl(250, 100%, 70%);
+  margin-bottom: 10px
+}
+
+hr:last-of-type {
+  margin:0;
+}
+
+body {
+  background: url(https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTA4L2Rlc2lnbndpdGhtZTA5X2JhYnlfcGlua19hZXN0aGV0aWNfd2FsbHBhcGVyX29mX2Nsb3NlX3VwX3NhbmR5X18xMmRiMTgwOS02YTIyLTRlNjEtYjFkNy0xZThiNDA0NDBkZDJfMS5qcGc.jpg)
+}
+
+div {
+  background-color: beige;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+fieldset {
+  margin: 10px 0;
+  border-color: pink
+}
+
+fieldset:last-of-type {
+  border-width: 0
+}
+
+label, legend {
+  font-size: 16px;
+  font-family: tahoma;
+}
+
+input {
+   width: 100%;
+}
+
+.input {
+  margin:0;
+  width: 15%
+}
+
+.label {
+  width: 75%;
+  margin-right: 0;
+  display: block;
+  margin-left: 0
+}
